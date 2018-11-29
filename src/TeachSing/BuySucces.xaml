@@ -1,0 +1,10 @@
+﻿<Window x:Class="TeachSing.BuySucces"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="BuySucces" Height="455" Width="562" WindowStyle="None" WindowStartupLocation="CenterScreen" AllowsTransparency="True" Background="Transparent" Loaded="Window_Loaded" Closing="Window_Closing">
+    <Grid>
+        
+        <Image Source="/Image\PopupImage\BuySucces.png"/>
+        <Label Name="WifeError" Content="3S 后自动关闭"   Margin="0,0,0,50"  VerticalContentAlignment="Bottom" HorizontalAlignment="Center" FontSize="30" Foreground="#FF6B6B"  />
+    </Grid>
+</Window>

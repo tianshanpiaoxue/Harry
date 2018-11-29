@@ -1,0 +1,10 @@
+﻿<Window x:Class="TeachSing.ClassInError"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="ClassInError" Height="509" Width="562" WindowStyle="None"  AllowsTransparency="True"  Background="Transparent" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Image Source="Image\PopupImage\ClassInError.png"/>
+
+        <Image Source="Image\确定.png" Stretch="None" Width="200" Height="74" Margin="0,390,0,45" MouseLeftButtonUp="Image_MouseLeftButtonUp" />
+    </Grid>
+</Window>

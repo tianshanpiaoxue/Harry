@@ -1,0 +1,8 @@
+﻿<Window x:Class="TeachSing.ShelterDown"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="ShelterDown" Height="40" Width="1920" WindowStyle="None"  AllowsTransparency="True" Background="#2E3038"  Loaded="Window_Loaded">
+    <Grid>
+        
+    </Grid>
+</Window>

@@ -1,0 +1,65 @@
+﻿<UserControl x:Class="TeachSing.UsFreeTalkList"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="821" d:DesignWidth="1920" Background="#F3F3F3" Loaded="UserControl_Loaded">
+    <Grid x:Name="UniformGrid">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="20"/>
+            <RowDefinition Height="116"/>
+            <RowDefinition Height="35"/>
+            <RowDefinition Height="211"/>
+            <RowDefinition Height="61"/>
+            <RowDefinition Height="46"/>
+            <RowDefinition Height="211"/>
+            <RowDefinition Height="61"/>
+            <RowDefinition Height="56"/>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="38*"/>
+            <ColumnDefinition Width="280*"/>
+            <ColumnDefinition Width="30*"/>
+            <ColumnDefinition Width="280*"/>
+            <ColumnDefinition Width="30*"/>
+            <ColumnDefinition Width="280*"/>
+            <ColumnDefinition Width="30*"/>
+            <ColumnDefinition Width="280*"/>
+            <ColumnDefinition Width="30*"/>
+            <ColumnDefinition Width="280*"/>
+            <ColumnDefinition Width="30*"/>
+            <ColumnDefinition Width="280*"/>
+            <ColumnDefinition Width="30*"/>
+        </Grid.ColumnDefinitions>
+        <Image Source="Image\FirstImage\Twoplesa.png" Grid.Row="1" Grid.ColumnSpan="4" HorizontalAlignment="Left" />
+
+        <Image x:Name="ImageTalk1"  Grid.Row="3" Grid.Column="1" MouseLeftButtonUp="Image_MouseDown"/>
+        <Label Name="lblTalk1" Grid.Row="4" Grid.Column="1" Content="节日" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="26" Foreground="#333333" MouseLeftButtonUp="Image_MouseDown"/>
+        <Image x:Name="ImageTalk2"  Grid.Row="3" Grid.Column="3"   MouseLeftButtonUp="Image_MouseDown" />
+        <Label Name="lblTalk2" Grid.Row="4" Grid.Column="3" Content="准备打卡" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="26" Foreground="#333333" MouseLeftButtonUp="Image_MouseDown"/>
+        <Image x:Name="ImageTalk3" Source="{Binding Path=ImageTalk3}" Grid.Row="3" Grid.Column="5"  MouseLeftButtonUp="Image_MouseDown" />
+        <Label Name="lblTalk3" Grid.Row="4" Grid.Column="5" Content="准备打卡" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="26" Foreground="#333333" MouseLeftButtonUp="Image_MouseDown"/>
+        <Image x:Name="ImageTalk4" Source="{Binding Path=ImageTalk4}" Grid.Row="3" Grid.Column="7"  MouseLeftButtonUp="Image_MouseDown" />
+        <Label Name="lblTalk4" Grid.Row="4" Grid.Column="7" Content="准备打卡" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="26" Foreground="#333333" MouseLeftButtonUp="Image_MouseDown"/>
+        <Image x:Name="ImageTalk5" Source="{Binding Path=ImageTalk5}" Grid.Row="3" Grid.Column="9" MouseLeftButtonUp="Image_MouseDown" />
+        <Label Name="lblTalk5" Grid.Row="4" Grid.Column="9" Content="节日" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="26" Foreground="#333333" MouseLeftButtonUp="Image_MouseDown"/>
+        <Image x:Name="ImageTalk6" Source="{Binding Path=ImageTalk6}" Grid.Row="3" Grid.Column="11"  MouseLeftButtonUp="Image_MouseDown" />
+        <Label Name="lblTalk6" Grid.Row="4" Grid.Column="11" Content="节日" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="26" Foreground="#333333" MouseLeftButtonUp="Image_MouseDown"/>
+        <Image x:Name="ImageTalk7" Source="{Binding Path=ImageTalk7}" Grid.Row="6" Grid.Column="1"  MouseLeftButtonUp="Image_MouseDown" />
+        <Label Name="lblTalk7" Grid.Row="7" Grid.Column="1" Content="节日" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="26" Foreground="#333333" MouseLeftButtonUp="Image_MouseDown"/>
+        <Image x:Name="ImageTalk8" Source="{Binding Path=ImageTalk8}" Grid.Row="6" Grid.Column="3"  MouseLeftButtonUp="Image_MouseDown" />
+        <Label Name="lblTalk8" Grid.Row="7" Grid.Column="3" Content="节日" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="26" Foreground="#333333" MouseLeftButtonUp="Image_MouseDown"/>
+        <Image x:Name="ImageTalk9" Source="{Binding Path=ImageTalk9}" Grid.Row="6" Grid.Column="5"  MouseLeftButtonUp="Image_MouseDown" />
+        <Label Name="lblTalk9" Grid.Row="7" Grid.Column="5" Content="节日" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="26" Foreground="#333333" MouseLeftButtonUp="Image_MouseDown"/>
+        <Image x:Name="ImageTalk10" Source="{Binding Path=ImageTalk10}" Grid.Row="6" Grid.Column="7"  MouseLeftButtonUp="Image_MouseDown"/>
+        <Label Name="lblTalk10" Grid.Row="7" Grid.Column="7" Content="节日" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="26" Foreground="#333333" MouseLeftButtonUp="Image_MouseDown"/>
+        <Image x:Name="ImageTalk11" Source="{Binding Path=ImageTalk11}" Grid.Row="6" Grid.Column="9"  MouseLeftButtonUp="Image_MouseDown" />
+        <Label Name="lblTalk11" Grid.Row="7" Grid.Column="9" Content="节日" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="26" Foreground="#333333" MouseLeftButtonUp="Image_MouseDown"/>
+        <Image x:Name="ImageTalk12" Source="{Binding Path=ImageTalk12}" Grid.Row="6" Grid.Column="11"  MouseLeftButtonUp="Image_MouseDown" />
+        <Label Name="lblTalk12" Grid.Row="7" Grid.Column="11"  VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="26" Foreground="#333333" MouseLeftButtonUp="Image_MouseDown"/>
+
+
+    </Grid>
+</UserControl>

@@ -1,0 +1,10 @@
+﻿<Window x:Class="TeachSing.SuggestPage"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="SuggestPage" Height="700" Width="1279" WindowStyle="None" WindowStartupLocation="CenterScreen" AllowsTransparency="True" 
+        Background="Transparent" >
+    <Grid>
+        <Image Source="Image\PopupImage\问卷.png" Stretch="UniformToFill"/>
+        <Image Source="Image\关闭.png" Stretch="None" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="0,21,21,0" MouseDown="Image_MouseDown" />
+    </Grid>
+</Window>

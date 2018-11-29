@@ -1,0 +1,9 @@
+﻿<Window x:Class="TeachSing.BuyError"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="BuyError" Height="509" Width="562" WindowStyle="None" WindowStartupLocation="CenterScreen" AllowsTransparency="True" Background="Transparent">
+    <Grid>
+        <Image Source="Popup\BuyError.png"/>
+        <Image Source="/Image\PopupImage\BuySuccesEnter.png" Height="74" Width="250" Margin="156,383,156,50" MouseLeftButtonUp="Image_MouseLeftButtonUp"/>
+    </Grid>
+</Window>

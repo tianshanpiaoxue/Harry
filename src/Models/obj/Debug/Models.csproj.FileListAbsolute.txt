@@ -1,0 +1,14 @@
+E:\Demo\TeachSing\Models\bin\Debug\Models.dll
+E:\Demo\TeachSing\Models\bin\Debug\Models.pdb
+E:\Demo\TeachSing\Models\obj\Debug\Models.csprojResolveAssemblyReference.cache
+E:\Demo\TeachSing\Models\obj\Debug\Models.dll
+E:\Demo\TeachSing\Models\obj\Debug\Models.pdb
+E:\Demo\WPF版本源码文件列表\TeachSing-TenMonth\Models\bin\Debug\Models.dll
+E:\Demo\WPF版本源码文件列表\TeachSing-TenMonth\Models\bin\Debug\Models.pdb
+E:\Demo\WPF版本源码文件列表\TeachSing-TenMonth\Models\obj\Debug\Models.csprojResolveAssemblyReference.cache
+E:\Demo\WPF版本源码文件列表\TeachSing-TenMonth\Models\obj\Debug\Models.dll
+E:\Demo\WPF版本源码文件列表\TeachSing-TenMonth\Models\obj\Debug\Models.pdb
+G:\WPF盒子\WPF-Harry\TeachSing-TenMonth\Models\bin\Debug\Models.dll
+G:\WPF盒子\WPF-Harry\TeachSing-TenMonth\Models\bin\Debug\Models.pdb
+G:\WPF盒子\WPF-Harry\TeachSing-TenMonth\Models\obj\Debug\Models.dll
+G:\WPF盒子\WPF-Harry\TeachSing-TenMonth\Models\obj\Debug\Models.pdb

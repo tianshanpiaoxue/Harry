@@ -1,0 +1,11 @@
+﻿<Window x:Class="TeachSing.login"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="login" Height="562" Width="554" WindowStyle="None" WindowStartupLocation="CenterScreen" AllowsTransparency="True" Background="Transparent" Loaded="Window_Initialized">
+    
+    <Grid>
+        <Image Source="Image\FirstImage\login.png"/>
+        <Image Name="LoginCord"  Width="284" Height="284" Margin="135,167,135,103"/>
+        <Image Source="/Image\关闭.png" Width="30" Height="30" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="0,30,25,0" MouseLeftButtonUp="Cansol_MouseDown"/>
+    </Grid>
+</Window>

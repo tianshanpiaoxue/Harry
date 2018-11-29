@@ -1,0 +1,51 @@
+﻿<UserControl x:Class="TeachSing.OverMVTip"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="821" d:DesignWidth="1920" Background="#F3F3F3">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="45"/>
+            <RowDefinition Height="744"/>
+            <RowDefinition Height="32"/>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="38*"/>
+                <ColumnDefinition Width="456*"/>
+                <ColumnDefinition Width="28*"/>
+                <ColumnDefinition Width="664*"/>
+                <ColumnDefinition Width="28*"/>
+                <ColumnDefinition Width="664*"/>
+                <ColumnDefinition Width="42*"/>
+            </Grid.ColumnDefinitions>
+            <Image Source="Popup\Over1.png" Grid.Column="1"  />
+            <Image Source="Popup\Over2.png" Grid.Column="3"  />
+            <Image Source="Popup\Over3.png" Grid.Column="5"  />
+            <Label Name="Score" Content="98" FontFamily="PingFang-SC-Medium" FontSize="172" Foreground="#FC6161" Grid.Column="1" Margin="0,130,0,0" HorizontalAlignment="Center" />
+            <Label Name="ScorLang"  FontFamily="PingFang-SC-Regular" FontSize="24" Foreground="#333333" Grid.Column="1" Margin="30,469,40,0" HorizontalAlignment="Left" >
+                <TextBlock TextWrapping="Wrap" 
+                Text="吐词清晰，发音标准，对歌曲掌握比较熟练，吐词清晰，发标准，对歌曲掌握比较熟练，吐词清晰，发音标准，对歌曲掌握比较熟练，吐词清晰，发音标准，对歌曲掌握比较熟练，吐词清晰。" LineHeight="12" />
+            </Label>
+            <Label Name="SongName" Content="《That girl》" FontFamily="PingFang-SC-Bold" FontSize="36" Foreground="#333333" Grid.Column="3" Margin="57,130,0,0" HorizontalAlignment="Left" />
+            <Label Name="SongNum1" Content="There's a girl but I let her get away" FontFamily="PingFang-SC-Medium" FontSize="28" Foreground="#2EC692" Grid.Column="3" Margin="57,210,0,0" HorizontalAlignment="Left" />
+            <Label Name="SongNum2" Content="It's all my fault cause pride got in the way" FontFamily="PingFang-SC-Medium" FontSize="28" Foreground="#FC6161" Grid.Column="3" Margin="57,273,0,0" HorizontalAlignment="Left" />
+            <Label Name="SongNum3" Content="About that girl the one I let get away" FontFamily="PingFang-SC-Medium" FontSize="28" Foreground="#FFC835" Grid.Column="3" Margin="57,335,0,0" HorizontalAlignment="Left" />
+            <Label Name="SongNum4" Content="There's a girl but I let her get away" FontFamily="PingFang-SC-Medium" FontSize="28" Foreground="#2EC692" Grid.Column="3" Margin="57,398,0,0" HorizontalAlignment="Left" />
+            <Label Name="SongNum5" Content="It's all my fault cause pride got in the way" FontFamily="PingFang-SC-Medium" FontSize="28" Foreground="#FC6161" Grid.Column="3" Margin="57,461,0,0" HorizontalAlignment="Left" />
+            <Label Name="SongNum6" Content="About that girl the one I let get away" FontFamily="PingFang-SC-Medium" FontSize="28" Foreground="#FFC835" Grid.Column="3" Margin="57,524,0,0" HorizontalAlignment="Left" />
+            <Label Name="SongNum7" Content="About that girl the one I let get away" FontFamily="PingFang-SC-Medium" FontSize="28" Foreground="#2EC692" Grid.Column="3" Margin="57,586,0,0" HorizontalAlignment="Left" />
+
+
+            <Label Name="TextNum1" Content="Fireworks  ['faɪəwɜ:ks]  n.烟火、烟花" FontFamily="SourceHanSansSC-Regular" FontSize="35" Foreground="#333333" Grid.Column="5" VerticalAlignment="Top" Height="50" Margin="57,210,0,0" HorizontalAlignment="Left" />
+            <Label Name="TextNum2" Content="Fireworks  ['faɪəwɜ:ks]  n.烟火、烟花"  FontFamily="PingFang-SC-Medium" FontSize="35" Foreground="#333333" Grid.Column="5" VerticalAlignment="Top" Height="50" Margin="57,273,0,0" HorizontalAlignment="Left" />
+            <Label Name="TextNum3" Content="Fireworks  ['faɪəwɜ:ks]  n.烟火、烟花" FontFamily="PingFang-SC-Medium" FontSize="35" Foreground="#333333" Grid.Column="5" VerticalAlignment="Top" Height="50" Margin="57,335,0,0" HorizontalAlignment="Left" />
+            <Label Name="TextNum4" Content="Fireworks  ['faɪəwɜ:ks]  n.烟火、烟花" FontFamily="PingFang-SC-Medium" FontSize="35" Foreground="#333333" Grid.Column="5" VerticalAlignment="Top" Height="50" Margin="57,398,0,0" HorizontalAlignment="Left" />
+            <Label Name="TextNum5" Content="Fireworks  ['faɪəwɜ:ks]  n.烟火、烟花" FontFamily="PingFang-SC-Medium" FontSize="35" Foreground="#333333" Grid.Column="5" VerticalAlignment="Top" Height="50" Margin="57,461,0,0" HorizontalAlignment="Left" />
+            <Label Name="TextNum6" Content="Fireworks  ['faɪəwɜ:ks]  n.烟火、烟花" FontFamily="PingFang-SC-Medium" FontSize="35" Foreground="#333333" Grid.Column="5" VerticalAlignment="Top" Height="50" Margin="57,524,0,0" HorizontalAlignment="Left" />
+            <Label Name="TextNum7" Content="Fireworks  ['faɪəwɜ:ks]  n.烟火、烟花" FontFamily="PingFang-SC-Medium" FontSize="35" Foreground="#333333" Grid.Column="5" VerticalAlignment="Top" Height="50" Margin="57,586,0,0" HorizontalAlignment="Left" />
+        </Grid>
+    </Grid>
+</UserControl>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<KTVConfig>
+  <ApiUrl>https://192.168.74.53£º8084/Box/BoxApi.ashx?</ApiUrl>
+  <ApiKey>uNHgU29tygAPXMTKLPbhnVx454GcC4AhYOfBU4bBnd4=</ApiKey>
+  <MID>2</MID>
+  <picSong>F:\KTV\Songs\icon</picSong>
+  <picTech>E:\KTV\Tech</picTech>
+  <pathSong>F:\MV\</pathSong>
+  <barCode>2.png</barCode>
+</KTVConfig>
+
+
+

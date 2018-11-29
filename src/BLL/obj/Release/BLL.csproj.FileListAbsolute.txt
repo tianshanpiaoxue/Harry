@@ -1,0 +1,9 @@
+E:\Demo\TeachSing\BLL\bin\Release\BLL.dll
+E:\Demo\TeachSing\BLL\bin\Release\BLL.pdb
+E:\Demo\TeachSing\BLL\bin\Release\Models.dll
+E:\Demo\TeachSing\BLL\bin\Release\Newtonsoft.Json.dll
+E:\Demo\TeachSing\BLL\bin\Release\ThoughtWorks.QRCode.dll
+E:\Demo\TeachSing\BLL\bin\Release\Models.pdb
+E:\Demo\TeachSing\BLL\obj\Release\BLL.csprojResolveAssemblyReference.cache
+E:\Demo\TeachSing\BLL\obj\Release\BLL.dll
+E:\Demo\TeachSing\BLL\obj\Release\BLL.pdb

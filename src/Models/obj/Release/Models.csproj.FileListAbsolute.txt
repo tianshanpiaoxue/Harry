@@ -1,0 +1,4 @@
+E:\Demo\TeachSing\Models\bin\Release\Models.dll
+E:\Demo\TeachSing\Models\bin\Release\Models.pdb
+E:\Demo\TeachSing\Models\obj\Release\Models.dll
+E:\Demo\TeachSing\Models\obj\Release\Models.pdb

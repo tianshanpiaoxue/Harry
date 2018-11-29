@@ -1,0 +1,719 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D0D305E3-98E2-4EAC-A49F-608044F1CB93}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TeachSing</RootNamespace>
+    <AssemblyName>TeachSing</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\demo\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MyLoadingLib, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\MyLoadingLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="Transitionals, Version=1.2.0.0, Culture=neutral, PublicKeyToken=4747a3d6bcb35c80, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Transitionals.dll</HintPath>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="BuyError.xaml.cs">
+      <DependentUpon>BuyError.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="BuySucces.xaml.cs">
+      <DependentUpon>BuySucces.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ClassInError.xaml.cs">
+      <DependentUpon>ClassInError.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ComingEnd.xaml.cs">
+      <DependentUpon>ComingEnd.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Comon.cs" />
+    <Compile Include="DownWorkTime.xaml.cs">
+      <DependentUpon>DownWorkTime.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="FailWaitTeach.xaml.cs">
+      <DependentUpon>FailWaitTeach.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="login.xaml.cs">
+      <DependentUpon>login.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="NetError.xaml.cs">
+      <DependentUpon>NetError.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="OverClassInTip.xaml.cs">
+      <DependentUpon>OverClassInTip.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="OverMVTip.xaml.cs">
+      <DependentUpon>OverMVTip.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="OverPalyTip.xaml.cs">
+      <DependentUpon>OverPalyTip.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PayMentList.xaml.cs">
+      <DependentUpon>PayMentList.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Popup\HelpGuide.xaml.cs">
+      <DependentUpon>HelpGuide.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ShareGuide.xaml.cs">
+      <DependentUpon>ShareGuide.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ShelterButton.xaml.cs">
+      <DependentUpon>ShelterButton.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ShelterDown.xaml.cs">
+      <DependentUpon>ShelterDown.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ShelterRight.xaml.cs">
+      <DependentUpon>ShelterRight.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ShelterUp.xaml.cs">
+      <DependentUpon>ShelterUp.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SuggestPage.xaml.cs">
+      <DependentUpon>SuggestPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="TeachRead.xaml.cs">
+      <DependentUpon>TeachRead.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="TimeoutReminder.xaml.cs">
+      <DependentUpon>TimeoutReminder.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UsFirstPage.xaml.cs">
+      <DependentUpon>UsFirstPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UsFreeTalkList.xaml.cs">
+      <DependentUpon>UsFreeTalkList.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UsMVplay.xaml.cs">
+      <DependentUpon>UsMVplay.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UsPayMentList.xaml.cs">
+      <DependentUpon>UsPayMentList.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UsReadPlay.xaml.cs">
+      <DependentUpon>UsReadPlay.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UsTeachTalk.xaml.cs">
+      <DependentUpon>UsTeachTalk.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UsWaitTalk.xaml.cs">
+      <DependentUpon>UsWaitTalk.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UsWaitTeach.xaml.cs">
+      <DependentUpon>UsWaitTeach.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="VolumeHelper\AudioEndpointVolumeCallback.cs" />
+    <Compile Include="VolumeHelper\VolumeControl.cs" />
+    <Compile Include="VolumeHelper\VolumeHelper.cs" />
+    <Page Include="BuyError.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="BuySucces.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ClassInError.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ComingEnd.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="DownWorkTime.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="FailWaitTeach.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="login.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="NetError.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="OverClassInTip.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="OverMVTip.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="OverPalyTip.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="PayMentList.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Popup\HelpGuide.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Popup\FrmIsOut.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Popup\FrmIsOut.xaml.cs">
+      <DependentUpon>FrmIsOut.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Page Include="ShareGuide.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ShelterButton.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ShelterDown.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ShelterRight.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ShelterUp.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SuggestPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="TeachRead.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="TimeoutReminder.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UsFirstPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UsFreeTalkList.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UsMVplay.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UsPayMentList.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UsReadPlay.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UsTeachTalk.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UsWaitTalk.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UsWaitTeach.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image\退出.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image\椭圆3拷贝2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image\Downpage\竖线.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image\Downpage\分享指引.png" />
+    <Resource Include="Image\Downpage\帮助指引.png" />
+    <Resource Include="Image\Downpage\系统运行.png" />
+    <Resource Include="Image\Downpage\网络.png" />
+    <Resource Include="Image\Downpage\老师回复.png" />
+    <Resource Include="Image\Downpage\购买套餐.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image\Downpage\话筒.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image\Head\headlong.png" />
+    <Resource Include="Image\Head\headmiddle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image\Head\loading.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image\Head\退出.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image\Head\头像.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image\OutBack.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image\确定.png" />
+    <Resource Include="Image\返回首页.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image\关闭.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image\FirstImage\图层0.png" />
+    <Resource Include="Image\FirstImage\Oneplesa.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image\TeachTalk\全部.png" />
+    <Resource Include="Image\TeachTalk\星拷贝8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image\Downpage\返回上一级.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image\PayMent\优惠.png" />
+    <Resource Include="Image\PayMent\时间.png" />
+    <Resource Include="Image\PayMent\最热.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image\PopupImage\Help.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image\PopupImage\Share.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image\PopupImage\BuySucces.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image\PopupImage\BuySuccesEnter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image\PopupImage\CloseClass.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image\PopupImage\CloseClassEn.png" />
+    <Resource Include="Image\PopupImage\CloseClassSo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BLL\BLL.csproj">
+      <Project>{2a3ee559-02ce-47f7-bb9c-845b16dc5213}</Project>
+      <Name>BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Models\Models.csproj">
+      <Project>{ade95df2-4e6a-4186-afde-f749381dec80}</Project>
+      <Name>Models</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image\PayMent\backone.png" />
+    <Resource Include="Image\PayMent\backtwo.png" />
+    <Resource Include="Image\PayMent\backthree.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image\PayMent\time.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image\PayMent\TIM图片20171125190438拷贝2.png" />
+    <Resource Include="Image\PayMent\cordback.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image\教材.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image\Downpage\耳机.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image\TeachTalk\正在进入教室.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image\TeachTalk\进入教室~.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image\PopupImage\问卷.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image\FirstImage\Twoplesa.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image\TeachTalk\SongListew.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image\TeachTalk\huakuai.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image\TeachTalk\left0.png" />
+    <Resource Include="Image\TeachTalk\right1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image\TeachTalk\right0.png" />
+    <Resource Include="Image\TeachTalk\left1.png" />
+    <Resource Include="Image\TeachTalk\load.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image\PayMent\右箭头拷贝2.png" />
+    <Resource Include="Image\PayMent\右箭头拷贝3.png" />
+    <Resource Include="Image\PayMent\load.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image\FirstImage\Threeplesa.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image\FirstImage\fourplesa.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image\Downpage\ReadPlay.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image\Downpage\开始练习.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image\FirstImage\login.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image\Head\登录_9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image\Head\登录.png" />
+    <Resource Include="Image\Head\默认头像.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image\PayMent\矩形11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image\Downpage\结束练习_50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Popup\Over1.png" />
+    <Resource Include="Popup\Over2.png" />
+    <Resource Include="Popup\Over3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image\PopupImage\failwaitTeach.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image\PopupImage\继续等待.png" />
+    <Resource Include="Image\PopupImage\返回上一级.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image\FirstImage\first1.png" />
+    <Resource Include="Image\FirstImage\first2.png" />
+    <Resource Include="Image\FirstImage\firstcopy1.png" />
+    <Resource Include="Image\FirstImage\firstcopy2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image\TeachTalk\loadingd.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image\FirstImage\fiveStar.png" />
+    <Resource Include="Image\FirstImage\oneStar.png" />
+    <Resource Include="Image\FirstImage\threeStar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image\FirstImage\ClassInLeft.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image\FirstImage\leftButtn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image\FirstImage\righrButton.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image\Downpage\右箭头.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image\Downpage\结束课程.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image\Downpage\反馈1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image\PopupImage\ClassInError.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image\PopupImage\OverClassInTip.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Popup\BuyError.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image\PayMent\BestHot.png" />
+    <Resource Include="Image\PayMent\Offer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image\PopupImage\PackageComing End.png" />
+    <Resource Include="Image\PopupImage\TeachingMaterial.png" />
+    <Resource Include="Image\PopupImage\Timeout Reminder.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image\TeachTalk\返回.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image\PopupImage\购买套餐.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image\PopupImage\Return.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image\PayMent\无法修改.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image\Downpage\NewStartReadPlay.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image\TeachTalk\播放.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image\banner.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image\PopupImage\时间.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image\PopupImage\Backiimg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image\PopupImage\NetError.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image\PlayerBtn_17.png" />
+    <Resource Include="Image\PlayerBtn_18.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image\VolumCor.png" />
+    <Resource Include="Image\VolumLong.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image\Cordtree.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image\FirstImage\threeRight.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image\FirstImage\Fiveplesa.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image\FirstImage\Threeplesa1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image\PayMent\loadingM.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image\PayMent\loadingM.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image\PopupImage\icon_sorry.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="DSOFramer">
+      <Guid>{00460180-9E5E-11D5-B7C8-B8269041DD57}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="stdole">
+      <Guid>{00020430-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image\books\书籍\幻灯片1.png" />
+    <Resource Include="Image\books\书籍\幻灯片2.png" />
+    <Resource Include="Image\books\书籍\幻灯片3.png" />
+    <Resource Include="Image\books\书籍\幻灯片4.png" />
+    <Resource Include="Image\books\书籍\幻灯片5.png" />
+    <Resource Include="Image\books\书籍\幻灯片6.png" />
+    <Resource Include="Image\books\书籍\幻灯片7.png" />
+    <Resource Include="Image\books\明星\幻灯片1.png" />
+    <Resource Include="Image\books\明星\幻灯片2.png" />
+    <Resource Include="Image\books\明星\幻灯片3.png" />
+    <Resource Include="Image\books\明星\幻灯片4.png" />
+    <Resource Include="Image\books\明星\幻灯片5.png" />
+    <Resource Include="Image\books\明星\幻灯片6.png" />
+    <Resource Include="Image\books\明星\幻灯片7.png" />
+    <Resource Include="Image\books\节日\幻灯片1.png" />
+    <Resource Include="Image\books\节日\幻灯片2.png" />
+    <Resource Include="Image\books\节日\幻灯片3.png" />
+    <Resource Include="Image\books\节日\幻灯片4.png" />
+    <Resource Include="Image\books\节日\幻灯片5.png" />
+    <Resource Include="Image\books\节日\幻灯片6.png" />
+    <Resource Include="Image\books\节日\幻灯片7.png" />
+    <Resource Include="Image\books\食物\幻灯片1.png" />
+    <Resource Include="Image\books\食物\幻灯片2.png" />
+    <Resource Include="Image\books\食物\幻灯片3.png" />
+    <Resource Include="Image\books\食物\幻灯片4.png" />
+    <Resource Include="Image\books\食物\幻灯片5.png" />
+    <Resource Include="Image\books\食物\幻灯片6.png" />
+    <Resource Include="Image\books\食物\幻灯片7.png" />
+    <Resource Include="Image\books\影视\幻灯片1.png" />
+    <Resource Include="Image\books\影视\幻灯片2.png" />
+    <Resource Include="Image\books\影视\幻灯片3.png" />
+    <Resource Include="Image\books\影视\幻灯片4.png" />
+    <Resource Include="Image\books\影视\幻灯片5.png" />
+    <Resource Include="Image\books\影视\幻灯片6.png" />
+    <Resource Include="Image\books\影视\幻灯片7.png" />
+    <Resource Include="Image\books\音乐\幻灯片1.png" />
+    <Resource Include="Image\books\音乐\幻灯片2.png" />
+    <Resource Include="Image\books\音乐\幻灯片3.png" />
+    <Resource Include="Image\books\音乐\幻灯片4.png" />
+    <Resource Include="Image\books\音乐\幻灯片5.png" />
+    <Resource Include="Image\books\音乐\幻灯片6.png" />
+    <Resource Include="Image\books\音乐\幻灯片7.png" />
+    <Resource Include="Image\books\宠物\幻灯片2.png" />
+    <Resource Include="Image\books\宠物\幻灯片3.png" />
+    <Resource Include="Image\books\宠物\幻灯片4.png" />
+    <Resource Include="Image\books\宠物\幻灯片5.png" />
+    <Resource Include="Image\books\宠物\幻灯片6.png" />
+    <Resource Include="Image\books\购物\幻灯片1.png" />
+    <Resource Include="Image\books\购物\幻灯片2.png" />
+    <Resource Include="Image\books\购物\幻灯片3.png" />
+    <Resource Include="Image\books\购物\幻灯片4.png" />
+    <Resource Include="Image\books\购物\幻灯片5.png" />
+    <Resource Include="Image\books\购物\幻灯片6.png" />
+    <Resource Include="Image\books\购物\幻灯片7.png" />
+    <Resource Include="Image\books\体育\幻灯片1.png" />
+    <Resource Include="Image\books\体育\幻灯片2.png" />
+    <Resource Include="Image\books\体育\幻灯片3.png" />
+    <Resource Include="Image\books\体育\幻灯片4.png" />
+    <Resource Include="Image\books\体育\幻灯片5.png" />
+    <Resource Include="Image\books\体育\幻灯片6.png" />
+    <Resource Include="Image\books\体育\幻灯片7.png" />
+    <Resource Include="Image\books\旅游\幻灯片1.png" />
+    <Resource Include="Image\books\旅游\幻灯片2.png" />
+    <Resource Include="Image\books\旅游\幻灯片3.png" />
+    <Resource Include="Image\books\旅游\幻灯片4.png" />
+    <Resource Include="Image\books\旅游\幻灯片5.png" />
+    <Resource Include="Image\books\旅游\幻灯片6.png" />
+    <Resource Include="Image\books\旅游\幻灯片7.png" />
+    <Resource Include="Image\books\工作\幻灯片1.png" />
+    <Resource Include="Image\books\工作\幻灯片2.png" />
+    <Resource Include="Image\books\工作\幻灯片3.png" />
+    <Resource Include="Image\books\工作\幻灯片4.png" />
+    <Resource Include="Image\books\工作\幻灯片5.png" />
+    <Resource Include="Image\books\工作\幻灯片6.png" />
+    <Resource Include="Image\books\工作\幻灯片7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image\PopupImage\isback.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

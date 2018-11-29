@@ -1,0 +1,9 @@
+﻿<Window x:Class="TeachSing.DownWorkTime"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="DownWorkTime" Height="509" Width="562" WindowStyle="None" WindowStartupLocation="CenterScreen" AllowsTransparency="True" Background="Transparent">
+    <Grid>
+        <Image Source="/Image\PopupImage\icon_sorry.png"/>
+        <Image Source="/Image\PopupImage\BuySuccesEnter.png" Height="74" Width="250" Margin="156,383,156,52" MouseDown="Image_MouseDown"/>
+    </Grid>
+</Window>
